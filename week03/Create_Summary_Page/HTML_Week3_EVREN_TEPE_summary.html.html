@@ -4,22 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--sayfayi ekran boyutuna(screen size) gore ayarla-->
-    <meta name="robots" content="noindex" /> <!--google aramalarinda gorunmesin-->
-    <meta name="copyright" content="Izinsiz kullanilmasi ve kopyalanmasi yasaktir."/> <!--telif hakki bilgileri-->
-    <meta name="author" content="Evren TEPE - tepeevren0@gmail.com"> <!--programciya ait bilgiler-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--sayfayi ekran boyutuna(screen size) gore ayarla-->
+    <meta name="robots" content="noindex" />
+    <!--google aramalarinda gorunmesin-->
+    <meta name="copyright" content="Izinsiz kullanilmasi ve kopyalanmasi yasaktir." />
+    <!--telif hakki bilgileri-->
+    <meta name="author" content="Evren TEPE - tepeevren0@gmail.com">
+    <!--programciya ait bilgiler-->
     <title>Kurs Programi</title>
+
+    <style>
+        .table-style {
+            width: 100%;
+        }
+
+        .row-style {
+            background-color: teal;
+        }
+
+        .cell-style {
+            background-color: lightgray;
+        }
+
+        .cell-2-style {
+            background-color: orange;
+            text-align: center;
+        }
+
+        .alt-baslik {
+            font-weight: bold;
+        }
+
+        #italik {
+            font-style: italic;
+        }
+
+        #main-title {
+            font-size: 26px;
+        }
+
+        #hatirlatma {
+            font-weight: bold;
+            background-color: yellow;
+        }
+
+        #title-style {
+            color: red;
+        }
+
+        #p-bold {
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body style="font-family: Arial, Helvetica, sans-serif;">
     <header>
-        <h2>WP 2021 - Hafta 03 - Ödev</h2>
-        <p>Bu haftaki derste daha fazla <x style="background-color: yellow;">HTML Attribüt</x>lerini tanıdık
-            ve biraz daha detaylarına baktık ve <x style="background-color: yellow;">HTML Entities</x>'ler
-            ile tanıştık. Ayrıca <u><strong>form</strong></u> ve kullanıcıların bilgi girebilmesi için
-            <u><strong>input</strong></u> elemanlarını tanıdık. Aiağıda "Hafta 04 Konseptler ve Linkler"
-            bolumunde bu hafta istediklerimizi ozet olarak bulabilirsiniz.
-        </p>
+        <h1 id="main-title">WP 2021 - Hafta 03 - Ödev</h1>
+        <article>
+            <p>Bu haftaki derste daha fazla <mark>HTML Attribüt</mark>lerini tanıdık
+                ve biraz daha detaylarına baktık ve <mark>HTML Entities</mark>'ler
+                ile tanıştık. Ayrıca <u><strong>form</strong></u> ve kullanıcıların bilgi girebilmesi için
+                <u><strong>input</strong></u> elemanlarını tanıdık. Aiağıda "Hafta 04 Konseptler ve Linkler"
+                bolumunde bu hafta istediklerimizi ozet olarak bulabilirsiniz.
+            </p>
+        </article>
+
     </header>
 
     <!--duz cizgi icin eklendi-->
@@ -28,16 +79,16 @@
     <main>
         <section>
             <fieldset>
-                <legend style="background-color: yellow;"><strong>HATIRLATMA</strong></legend>
+                <legend id="hatirlatma">HATIRLATMA</legend>
 
                 <details open>
-                    <summary style="color: red;">OKU BENI...</summary>
-                    <p><strong>Teori derslerinde gordugunuz konularin disinda kendiniz de ayricaarastirma yapip
-                            tag ve attribute'leri ogreniniz.
-                        </strong></p>
+                    <summary id="title-style">OKU BENI...</summary>
+                    <p id="p-bold">Teori derslerinde gordugunuz konularin disinda kendiniz de ayricaarastirma yapip
+                        tag ve attribute'leri ogreniniz.
+                    </p>
 
                     <p>Olcu olarak, alttaki dagilimi referans alabilirsini:</p>
-                    <ul style="font-style: oblique;">
+                    <ul id="italik">
                         <li>25% Teori</li>
                         <li>20% Pratik</li>
                         <li>25% Odev</li>
@@ -53,10 +104,9 @@
                 <legend><strong>Hafta 04 Konseptler ve Linkler</strong></legend>
 
                 <details open>
-                    <summary>Goster...</summary>
-
+                    <summary>Göster...</summary>
                     <ul>
-                        <li><strong>HTML Tag'lari</strong></li>
+                        <li class="alt-baslik">HTML Tag'lari</li>
                         <ul>
                             <li>form / input / select / textarea / label / button / fieldset / legend</li>
                             <li>audio, progress, meter, textarea, video, map, select, option</li>
@@ -68,7 +118,7 @@
                             <li>embed, iframe</li>
                             <li>Daha fazlasi: <a href="https://html.com/tags/" target="_blank">html.com/tags</a></li>
                         </ul>
-                        <li><strong>HTML Attributleri</strong></li>
+                        <li class="alt-baslik">HTML Attributleri</li>
                         <ul>
                             <li>Global</li>
                             <ul>
@@ -93,7 +143,7 @@
                             <li>Daha fazlasi: <a href="https://html.com/attributes/"
                                     target="_blank">html.com/attributes</a></li>
                         </ul>
-                        <li><strong>HTML Entity'leri</strong></li>
+                        <li class="alt-baslik">HTML Entity'leri</li>
                         <ul>
                             <li>&#128169;, &#128521;, &#128584;, &#10967;, &#128526;</li>
                             <li>Karakter referans sayfasi: <a href="https://dev.w3.org/html5/html-author/charref"
@@ -111,17 +161,17 @@
     <br>
     <br>
     <footer>
-        <table style="width: 100%;">
+        <table class="table-style">
             <caption>Isvicre'de bazi kantonlar ile ilgili bilgiler</caption>
             <thead>
-                <tr>
-                    <th style="background-color: teal;">Isim</tdh>
-                    <th style="background-color: teal;">Kisaltma</th>
-                    <th style="background-color: teal;">En buyuk sehri</th>
-                    <th style="background-color: teal;">Nufusu</th>
-                    <th style="background-color: teal;">Konuusulan dil</th>
-                    <th style="background-color: teal;">Bayragi</th>
-                    <th style="background-color: teal;">Sayfasi</th>
+                <tr class="row-style">
+                    <th>Isim</th>
+                    <th>Kisaltma</th>
+                    <th>En buyuk sehri</th>
+                    <th>Nufusu</th>
+                    <th>Konuusulan dil</th>
+                    <th>Bayragi</th>
+                    <th>Sayfasi</th>
                 </tr>
             </thead>
             <tbody>
@@ -131,7 +181,7 @@
                     <td>Zurich</td>
                     <td>1'504'346</td>
                     <td>Almanca</td>
-                    <td><img src="zürich.png" alt="Zurih kantonu armasi" height="25"></td>
+                    <td><img src="zürich.png" alt="Zurich-flag" height="25"></td>
                     <td><a href="https://www.zh.ch/de.html" target="_blank">zh.ch</a></td>
                 </tr>
                 <tr>
@@ -153,10 +203,10 @@
                     <td><a href="https://www.be.ch/" target="_blank">be.ch</a></td>
                 </tr>
                 <tr>
-                    <td colspan="7" style="background-color: lightgray;">...</td>
+                    <td colspan="7" class="cell-style">...</td>
                 </tr>
                 <tr>
-                    <td colspan="3" style="background-color: orange; text-align: center;">Toplam nufus</td>
+                    <td colspan="3" class="cell-2-style">Toplam nufus</td>
                     <td>8'039'060</td>
                 </tr>
             </tbody>
