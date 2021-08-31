@@ -11,7 +11,6 @@
         .table_row_style {
             background-color: lightgray;
         }
-
         /*urun ana resmi gosterimi*/
         .main_image {
             display: inline-block;
@@ -19,7 +18,6 @@
             vertical-align: top;
             border-right-style: groove;
         }
-
         /*urune ait bilgilendirme*/
         .products_info {
             display: inline-block;
@@ -27,40 +25,41 @@
             vertical-align: top;
             padding-inline-start: 1%;
         }
-
         /*urune ait kucuk resimler*/
         .image_style {
             display: inline
         }
-
         /*urun reklam aciklamalari*/
         .text_info {
             text-align: center;
             padding: 5%;
             color: snow;
         }
-
-        #figure {
+        .figure_style{
             display: inline
         }
     </style>
+
 </head>
+
 <body>
     <header>
         <h2>IT CLUB - Web Shop</h2>
         <p>Everything what you need</p>
     </header>
+
     <main>
         <hr>
         <nav class="main_image">
             <h4>APPLE</h4>
             <p>Apple MacBook Pro M1 Çip 8GB 256GB SSD macOS 13" QHD Taşınabilir Bilgisayar Uzay Grisi MYD82TU/A</p>
-            <figure id="figure"><img src="product_c.jpg" alt="product_a resmi" width="300"></figure>
-            <figure id="figure"><img src="product1.jpg" alt="product_a resmi" width="50"></figure>
-            <figure id="figure"><img src="product2.jpg" alt="product_a resmi" width="50"></figure>
-            <figure id="figure"><img src="product3.jpg" alt="product_a resmi" width="50"></figure>
-            <figure id="figure"><img src="product4.jpg" alt="product_a resmi" width="50"></figure>
+            <figure class="figure_style"><img src="product_c.jpg" alt="product_c resmi" width="300"></figure>
+            <figure class="figure_style"><img src="product1.jpg" alt="product_c resmi" width="50"></figure>
+            <figure class="figure_style"><img src="product2.jpg" alt="product_c resmi" width="50"></figure>
+            <figure class="figure_style"><img src="product3.jpg" alt="product_c resmi" width="50"></figure>
+            <figure class="figure_style"><img src="product4.jpg" alt="product_c resmi" width="50"></figure>
         </nav>
+
         <nav class="products_info">
             <p><strong style="color:green; padding-inline-start: 2%; font-size: x-large;">1'190.- CHF</strong>
                 <del style="color: darkgray; padding-inline-start: 2%; font-size: x-large;">1'400.-</del>
@@ -82,19 +81,20 @@
                 şimdiye kadarki en uzun pil ömrü, yepyeni bir düzeyde en popüler profesyonel dizüstü bilgisayarımız.
             </p>
             <table style="width: 80%;">
-                <header>
-                    <tr aria-colspan="2">
-                        <th>Özellikler</th>
+                <thead>
+                    <tr>
+                        <th colspan="2">Özellikler</th>
                     </tr>
-                </header>
-                <body>
+                </thead>
+
+                <tbody>
                     <tr class="table_row_style">
                         <td>urun numarasi</td>
-                        <td>908769900000</td>
+                        <td>798769900000</td>
                     </tr>
                     <tr>
                         <td>model serisi</td>
-                        <td>2021 sonu</td>
+                        <td>2020 sonu</td>
                     </tr>
                     <tr class="table_row_style">
                         <td>Ekran tipi</td>
@@ -124,9 +124,10 @@
                         <td>kablosuz iletim</td>
                         <td>kablosuz ağ , bluetooth</td>
                     </tr>
-                </body>
+                </tbody>
             </table>
         </nav>
+
         <nav style="background-color: black;">
             <br>
             <figure><img src="product5.jpg" alt="product_a resmi" width="100%"></figure>
