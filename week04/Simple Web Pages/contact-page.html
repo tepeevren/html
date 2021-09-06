@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="description" content="Web programming for HTML and CSS">
+    <meta name="author" content="Evren TEPE">
+    <title>Contact us</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <!--logo kismi-->
+        <section style="display: inline-block; width: 49%">
+          <img src="./logo-hiCoders.png" alt="Page's logo" width="110" />
+        </section>
+        <!--home ve contact linkleri kismi-->
+        <section style="display: inline-block; width: 49%">
+          <nav style="text-align: right">
+            <a href="./home-page.html">Home</a> <a href="./contact-page.html">Contact</a>
+          </nav>
+        </section>
+      </header>
+      <hr />
+      <main style="width: 70%; margin-left: 15%; margin-right: 15%">
+        <!--welcome hicoders section-->
+        <section class="section-bakgr" style="background-color: lightgrey; margin: 2px">
+          <section
+            style="
+              width: 64%;
+              padding: 10px;
+              margin-left: 15%;
+              margin-right: 15%;
+            "
+          >
+            <h4>The HiCoders welcomes you!</h4>
+            <p>
+              We are experienced software engineers. We volutarily help people
+              who are interested in IT and run various courses for this purpose.
+              If you are interested in our course, do not hesitate to contact
+              us!
+            </p>
+          </section>
+        </section>
+
+        <!--Personal information section-->
+        <section class="section-bakgr" style="background-color: lightgrey; margin: auto; margin: 2px">
+          <section
+            style="
+              width: 64%;
+              padding: 10px;
+              margin-left: 15%;
+              margin-right: 15%;
+            "
+          >
+            <fieldset>
+              <legend>Personal Information</legend>
+              <label for="fname">Firstname</label><br />
+              <input
+                type="text"
+                id="text-format"
+                name="fname"
+                placeholder="Please enter your firstname!"
+                style="width: 35%"
+              /><br />
+              <label for="lname">Lastname</label><br />
+              <input
+                type="text"
+                id="text-format"
+                name="lname"
+                placeholder="Please enter your lastname!"
+                style="width: 35%"
+              /><br />
+              <label for="email">Email</label><br />
+              <input
+                type="text"
+                id="text-format"
+                name="email"
+                placeholder="Please enter your email!"
+                style="width: 35%"
+              /><br />
+              <label for="gender">Gender</label><br />
+              <input
+                type="radio"
+                id="text-format"
+                name="gender"
+                value="Female"
+              />
+              <label for="f-gender">Female</label><br />
+              <input
+                type="radio"
+                id="text-format"
+                name="gender"
+                value="Male"
+              />
+              <label for="m-gender">Male</label><br />
+              <label for="phone">Phone</label><br />
+              <input
+                type="tel"
+                id="text-format"
+                name="phone"
+                placeholder="Please enter your phone no!"
+                style="width: 35%"
+              /><br />
+              <label for="phone">Graduation</label><br />
+              <select name="cars" id="cars" multiple>
+                <option value="PhD.">PhD.</option>
+                <option value="Master">Master</option>
+                <option value="Bachelor">Bachelor</option>
+                <option value="Association">Association</option></select
+              ><br />
+              <label for="phone">What do you expect from this course?</label
+              ><br />
+              <textarea
+                name="expect-course"
+                id="text-area"
+                rows="10"
+                style="width: 80%;"
+              ></textarea>
+              <br />
+              <label for="phone">What do you want to learn programming?</label
+              ><br />
+              <textarea
+                name="want-programming"
+                id="text-area"
+                rows="10"
+                style="width: 80%;"
+              ></textarea>
+              <br />
+            </fieldset>
+          </section>
+        </section>
+
+        <!--family members section-->
+        <section class="section-bakgr" style="background-color: lightgrey; margin: 2px">
+          <section
+            style="
+              width: 64%;
+              padding: 10px;
+              margin-left: 15%;
+              margin-right: 15%;
+            "
+          >
+            <fieldset>
+              <legend>Family Members</legend>
+              <label for="married">Are you married?</label><br />
+              <input
+                type="radio"
+                id="text-format"
+                name="married"
+                value="yes"
+              />
+              <label for="yes-married">Yes</label><br />
+              <input
+                type="radio"
+                id="text-format"
+                name="married"
+                value="no"
+              />
+              <label for="no-married">No</label><br />
+              <label for="child-number"
+                >If you married, how many child do you have?</label
+              ><br />
+              <input
+                type="number"
+                id="number-input"
+                name="child-number"
+                placeholder="Enter number of children!"
+                style="width: 35%"
+              />
+            </fieldset>
+          </section>
+        </section>
+
+        <!--Conformation and Application-->
+        <section class="section-bakgr" style="background-color: lightgrey; margin: 2px">
+          <section
+            style="
+              width: 64%;
+              padding: 10px;
+              margin-left: 15%;
+              margin-right: 15%;
+            "
+          >
+            <fieldset>
+              <legend>Confirmation and Application</legend>
+              <label for="select-lan">Which ones are you familiar with?</label
+              ><br />
+              <input type="checkbox" id="select-lan" name="html" />
+              <label for="html">HTML</label><br />
+              <input type="checkbox" id="select-lan" name="css" />
+              <label for="css">CSS</label><br />
+              <input type="checkbox" id="select-lan" name="bootstrap" />
+              <label for="bootstrap">Bootstrap</label><br />
+              <input type="checkbox" id="select-lan" name="javascript" />
+              <label for="javascript">JavaScript</label><br />
+              <input type="checkbox" id="select-lan" name="nodejs" />
+              <label for="nodejs">NodeJS</label><br />
+              <input type="checkbox" id="select-lan" name="reactjs" />
+              <label for="reactjs">ReactJS</label><br />
+
+              <label for="cv">Add your CV</label><br />
+              <input type="file" id="add-cv" name="cv" /><br />
+
+              <input type="checkbox" id="select-lan" name="confirm" />
+              <label for="confirm">
+                Please confirm by ticking the box after reading the
+                <a href="/privacy-terms-and-condition.html"
+                  >privacy terms and condition</a
+                >!
+              </label>
+              <br />
+              <button class="button-submit" type="button">Submit</button>
+            </fieldset>
+          </section>
+        </section>
+      </main>
+      <hr />
+      <footer class="footer-bakgr" style="background-color: lightgrey">
+        <footer style="display: inline-block; width: 45%">
+          <footer>
+            <ul style="text-align: center; list-style: inside">
+              <h4>Our Course Phases</h4>
+              <ul>
+                <li>Web Fundamentals</li>
+                <li>Web Programming</li>
+                <li>Fullstack Web Programming</li>
+                <li>Capstone Project</li>
+              </ul>
+            </ul>
+          </footer>
+        </footer>
+        <footer style="display: inline-block; width: 45%; text-align: center">
+          <footer>
+            <h4>Contact</h4>
+            &#9993;
+            <address style="display: inline-block">
+              <a href="info@hicoders.ch">info@hicoders.ch</a>
+            </address>
+            <br />
+            &#9990;
+            <address style="display: inline-block">
+              <a href="+41009001010">+41009001010</a>
+            </address>
+            <br />
+            &#10023;
+            <address style="display: inline-block">
+              Schaffhauserstrasse 470.
+            </address>
+            <br />
+            <address>8052 Zurich</address>
+          </footer>
+        </footer>
+      </footer>
+    </main>
+  </body>
+</html>
