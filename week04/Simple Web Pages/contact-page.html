@@ -11,260 +11,133 @@
   </head>
   <body>
     <main>
-      <header>
+      <header style="display: flex;">
         <!--logo kismi-->
-        <section style="display: inline-block; width: 49%">
-          <a href="./home-page.html"
-            ><img src="./logo-hiCoders.png" alt="Page's logo" width="110"
-          /></a>
-        </section>
+        <div style="flex: 1">
+          <a href="./home-page.html"><img src="./logo-hiCoders.png" alt="Page's logo" width="110"/></a>
+        </div>
         <!--home ve contact linkleri kismi-->
-        <section style="display: inline-block; width: 49%">
+        <div style="flex: 1">
           <nav style="text-align: right">
             <a href="./home-page.html">Home</a>
             <a href="./contact-page.html">Contact</a>
           </nav>
-        </section>
+        </div>
       </header>
       <hr />
 
-      <section style="display: flex; justify-content: center">
-        <section style="width: 70%; justify-content: center">
-          <!--welcome hicoders section-->
-          <section
-            class="section-bakgr"
-            style="
-              background-color: lightgrey;
-              margin: 2px;
-              display: flex;
-              justify-content: center;
-            "
-          >
-            <section style="width: 64%; padding: 10px; justify-content: center">
-              <h4>The HiCoders welcomes you!</h4>
-              <p>
-                We are experienced software engineers. We volutarily help people
-                who are interested in IT and run various courses for this
-                purpose. If you are interested in our course, do not hesitate to
-                contact us!
-              </p>
-            </section>
-          </section>
+      <div style="width: 70%; margin: auto;">
+        <!--welcomes you-->
+        <div class="info-section" style="background-color: lightgray; margin: 1px; padding-inline: 19%; padding-top: 10px; padding-bottom: 10px;">
+          <article>
+            <h3>The HiCoders welcomes you!</h3>
+            <p>
+              We are experienced software engineers. We volutarily help people who are interested in 
+              IT and run various courses for this purpose. If you are interested in our course, 
+              do not hesitate to contact us!
+            </p>
+          </article>
+        </div>
 
-          <!--Personal information section-->
-          <section
-            class="section-bakgr"
-            style="
-              background-color: lightgrey;
-              margin: auto;
-              margin: 2px;
-              display: flex;
-              justify-content: center;
-            "
-          >
-            <section style="width: 64%; padding: 10px; justify-content: center">
-              <fieldset>
-                <legend>Personal Information</legend>
-                <label for="fname">Firstname</label><br />
-                <input
-                  type="text"
-                  id="text-format"
-                  name="fname"
-                  placeholder="Please enter your firstname!"
-                  style="width: 35%"
-                /><br />
-                <label for="lname">Lastname</label><br />
-                <input
-                  type="text"
-                  id="text-format"
-                  name="lname"
-                  placeholder="Please enter your lastname!"
-                  style="width: 35%"
-                /><br />
-                <label for="email">Email</label><br />
-                <input
-                  type="text"
-                  id="text-format"
-                  name="email"
-                  placeholder="Please enter your email!"
-                  style="width: 35%"
-                /><br />
-                <label for="gender">Gender</label><br />
-                <input
-                  type="radio"
-                  id="text-format"
-                  name="gender"
-                  value="Female"
-                />
-                <label for="f-gender">Female</label><br />
-                <input
-                  type="radio"
-                  id="text-format"
-                  name="gender"
-                  value="Male"
-                />
-                <label for="m-gender">Male</label><br />
-                <label for="phone">Phone</label><br />
-                <input
-                  type="tel"
-                  id="text-format"
-                  name="phone"
-                  placeholder="Please enter your phone no!"
-                  style="width: 35%"
-                /><br />
-                <label for="phone">Graduation</label><br />
-                <select name="cars" id="cars" multiple>
-                  <option value="PhD.">PhD.</option>
-                  <option value="Master">Master</option>
-                  <option value="Bachelor">Bachelor</option>
-                  <option value="Association">Association</option></select
-                ><br />
-                <label for="phone">What do you expect from this course?</label
-                ><br />
-                <textarea
-                  name="expect-course"
-                  id="text-area"
-                  rows="10"
-                  style="width: 80%"
-                ></textarea>
-                <br />
-                <label for="phone">What do you want to learn programming?</label
-                ><br />
-                <textarea
-                  name="want-programming"
-                  id="text-area"
-                  rows="10"
-                  style="width: 80%"
-                ></textarea>
-                <br />
-              </fieldset>
-            </section>
-          </section>
+        <!--Personal information section-->
+        <div class="info-section" style="background-color: lightgray; margin: 1px; padding-inline: 19%; padding-top: 2px; padding-bottom: 2px;">
+          <fieldset>
+            <legend>Personal Information</legend>
 
-          <!--family members section-->
-          <section
-            class="section-bakgr"
-            style="
-              background-color: lightgrey;
-              margin: 2px;
-              display: flex;
-              justify-content: center;
-            "
-          >
-            <section style="width: 64%; padding: 10px; justify-content: center">
-              <fieldset>
-                <legend>Family Members</legend>
-                <label for="married">Are you married?</label><br />
-                <input
-                  type="radio"
-                  id="text-format"
-                  name="married"
-                  value="yes"
-                />
-                <label for="yes-married">Yes</label><br />
-                <input
-                  type="radio"
-                  id="text-format"
-                  name="married"
-                  value="no"
-                />
-                <label for="no-married">No</label><br />
-                <label for="child-number"
-                  >If you married, how many child do you have?</label
-                ><br />
-                <input
-                  type="number"
-                  id="number-input"
-                  name="child-number"
-                  placeholder="Enter number of children!"
-                  style="width: 35%"
-                />
-              </fieldset>
-            </section>
-          </section>
+            <label>Firstname</label><br />
+            <input type="text" name="fname" placeholder="Please enter your firstname!" style="width: 35%"/><br />
 
-          <!--Conformation and Application-->
-          <section
-            class="section-bakgr"
-            style="
-              background-color: lightgrey;
-              margin: 2px;
-              display: flex;
-              justify-content: center;
-            "
-          >
-            <section style="width: 64%; padding: 10px; justify-content: center">
-              <fieldset>
-                <legend>Confirmation and Application</legend>
-                <label for="select-lan">Which ones are you familiar with?</label
-                ><br />
-                <input type="checkbox" id="select-lan" name="html" />
-                <label for="html">HTML</label><br />
-                <input type="checkbox" id="select-lan" name="css" />
-                <label for="css">CSS</label><br />
-                <input type="checkbox" id="select-lan" name="bootstrap" />
-                <label for="bootstrap">Bootstrap</label><br />
-                <input type="checkbox" id="select-lan" name="javascript" />
-                <label for="javascript">JavaScript</label><br />
-                <input type="checkbox" id="select-lan" name="nodejs" />
-                <label for="nodejs">NodeJS</label><br />
-                <input type="checkbox" id="select-lan" name="reactjs" />
-                <label for="reactjs">ReactJS</label><br />
+            <label>Lastname</label><br />
+            <input type="text" name="lname" placeholder="Please enter your lastname!" style="width: 35%"/><br />
 
-                <label for="cv">Add your CV</label><br />
-                <input type="file" id="add-cv" name="cv" /><br />
+            <label>Email</label><br />
+            <input type="text" name="email" placeholder="Please enter your email!" style="width: 35%"/><br />
 
-                <input type="checkbox" id="select-lan" name="confirm" />
-                <label for="confirm">
-                  Please confirm by ticking the box after reading the
-                  <a href="/privacy-terms-and-condition.html"
-                    >privacy terms and condition</a
-                  >!
-                </label>
-                <br />
-                <button class="button-submit" type="button">Submit</button>
-              </fieldset>
-            </section>
-          </section>
-        </section>
-      </section>
+            <label>Gender</label><br />
+            <input type="radio" name="f-gender" value="Female" /><label>Female</label><br />
+            <input type="radio" name="m-gender" value="Male" /><label>Male</label><br />
+            
+            <label>Phone</label><br />
+            <input type="tel" name="phone" placeholder="Please enter your phone no!" style="width: 35%"/><br />  
+            
+            <label>Graduation</label><br />
+            <select name="cars" id="cars" multiple>
+              <option value="PhD.">PhD.</option>
+              <option value="Master">Master</option>
+              <option value="Bachelor">Bachelor</option>
+              <option value="Association">Association</option>
+            </select><br />
+                
+            <label>What do you expect from this course?</label><br />
+            <textarea name="expect-course" rows="10" style="width: 80%"></textarea><br />
+                
+            <label>What do you want to learn programming?</label><br />
+            <textarea name="want-programming" rows="10" style="width: 80%"></textarea><br />
+          </fieldset>
+        </div>
+        
+        <!--family members section-->
+        <div class="info-section" style="background-color: lightgray; margin: 1px; padding-inline: 19%; padding-top: 2px; padding-bottom: 2px;">
+          <fieldset>
+            <legend>Family Members</legend>
+            <label>Are you married?</label><br />
+            <input type="radio" name="yes-married" value="yes" />
+            <label>Yes</label><br />
+            <input type="radio" name="no-married" value="no" />
+            <label>No</label><br />
+            <label>If you married, how many child do you have?</label><br />
+            <input type="number" name="child-number" placeholder="Enter number of children!" style="width: 35%"/>
+          </fieldset>
+        </div>
+
+        <!--Conformation and Application-->
+        <div class="info-section" style="background-color: lightgray; margin: 1px; padding-inline: 19%; padding-top: 2px; padding-bottom: 2px;">
+          <fieldset>
+            <legend>Confirmation and Application</legend>
+            <label>Which ones are you familiar with?</label><br />
+            <input type="checkbox" name="html" />
+            <label>HTML</label><br />
+            <input type="checkbox" name="css" />
+            <label>CSS</label><br />
+            <input type="checkbox" name="bootstrap" />
+            <label>Bootstrap</label><br />
+            <input type="checkbox" name="javascript" />
+            <label>JavaScript</label><br />
+            <input type="checkbox" name="nodejs" />
+            <label>NodeJS</label><br />
+            <input type="checkbox" name="reactjs" />
+            <label>ReactJS</label><br />
+            <label>Add your CV</label><br />
+            <input type="file" name="cv" /><br />
+            <input type="checkbox" name="confirm" />
+            <label>Please confirm by ticking the box after reading the 
+              <a href="/privacy-terms-and-condition.html">privacy terms and condition</a>
+            </label>!<br />
+            <button class="button-submit" type="button">Submit</button>
+          </fieldset>
+        </div>
+      </div>
 
       <hr />
-      <footer class="footer-bakgr" style="background-color: lightgrey">
-        <section style="display: inline-block; width: 45%">
-          <section>
-            <ul style="text-align: center; list-style: inside">
-              <h4>Our Course Phases</h4>
-              <ul>
-                <li>Web Fundamentals</li>
-                <li>Web Programming</li>
-                <li>Fullstack Web Programming</li>
-                <li>Capstone Project</li>
-              </ul>
-            </ul>
-          </section>
+      <footer class="footer-bakgr" style="background-color: lightgrey; display: flex">
+        <section style="flex: 1; text-align: center">
+          <h4>Our Course Phases</h4>
+          <ul style="list-style: inside">
+            <li>Web Fundamentals</li>
+            <li>Web Programming</li>
+            <li>Fullstack Web Programming</li>
+            <li>Capstone Project</li>
+          </ul>
         </section>
 
-        <section style="display: inline-block; width: 45%; text-align: center">
-          <section>
-            <h4>Contact</h4>
-            &#9993;
-            <address style="display: inline-block">
-              <a href="info@hicoders.ch">info@hicoders.ch</a>
-            </address>
-            <br />
-            &#9990;
-            <address style="display: inline-block">
-              <a href="+41009001010">+41009001010</a>
-            </address>
-            <br />
-            &#10023;
-            <address style="display: inline-block">
-              Schaffhauserstrasse 470.
-            </address>
-            <br />
-            <address>8052 Zurich</address>
-          </section>
+        <section style="flex: 1; text-align: center">
+          <h4>Contact</h4>
+          <address>
+            &#9993; <a href="info@hicoders.ch">info@hicoders.ch</a><br />
+            &#9990; <a href="+41009001010">+41009001010</a><br />
+            &#10023; Schaffhauserstrasse 470.<br />
+            8052 Zurich
+          </address>
         </section>
       </footer>
     </main>

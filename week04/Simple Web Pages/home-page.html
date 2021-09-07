@@ -12,202 +12,121 @@
   <body>
     <main>
       <!--Sayfanin header kismi-->
-      <header>
+      <header style="display: flex;">
         <!--logo kismi-->
-        <section
-          class="inline-header-section"
-          style="display: inline-block; width: 49%"
-        >
-          <a href="./home-page.html"
-            ><img src="./logo-hiCoders.png" alt="Page's logo" width="110"
-          /></a>
-        </section>
+        <div style="flex: 1">
+          <a href="./home-page.html"><img src="./logo-hiCoders.png" alt="Page's logo" width="110"/></a>
+        </div>
         <!--home ve contact linkleri kismi-->
-        <section
-          class="inline-header-section"
-          style="display: inline-block; width: 49%"
-        >
+        <div style="flex: 1">
           <nav style="text-align: right">
             <a href="./home-page.html">Home</a>
             <a href="./contact-page.html">Contact</a>
           </nav>
-        </section>
+        </div>
       </header>
       <hr />
 
       <!--icerik baslik ve resim-->
-      <section id="main-title" style="text-align: center">
+      <section style="text-align: center">
         <h3>Welcome to HiCoders' Web Programming Course</h3>
-        <figure id="main-image" style="margin: 0px">
-          <img
-            src="image-main-page.png"
-            alt="Web Programming"
-            style="width: 100%"
-          />
+        <figure style="margin: 0px">
+          <img src="image-main-page.png" alt="Web Programming" style="width: 100%"/>
         </figure>
       </section>
 
       <!--icerik bilgiler-->
-      <section
-        id="main-info"
-        style="display: flex; justify-content: center; padding: 3px"
-      >
-        <section style="background-color: lightgray; width: 85%">
-          <section
-            class="inline-info-section"
-            style="display: inline-block; width: 49%"
-          >
-            <section>
-              <fieldset>
-                <legend>What contains Web Basics?</legend>
-                <ul>
-                  <li><u>HTML5</u></li>
-                  <li><u>CSS3</u></li>
-                  <li>
-                    Visual Studio Code (<i><u>IDE</u></i
-                    >)
-                  </li>
-                  <li>Semantic Web</li>
-                  <li>Responsive Web Design</li>
-                  <li>Bootstrap CSS Framework</li>
-                  <li>
-                    Command Line Interface (<i><u>CLI</u></i
-                    >)
-                  </li>
-                  <li>Git als VCS</li>
-                  <li>GitHub</li>
-                  <li>
-                    IT Basic & concept (<i
-                      >computers, networks, operating systems</i
-                    >)
-                  </li>
-                </ul>
-              </fieldset>
-            </section>
-
-            <section>
-              <fieldset>
-                <details open>
-                  <summary>What contains Web Programming?</summary>
-                  <ol>
-                    <li>
-                      Basic programming (<i
-                        >variables, conditions, loops, functions</i
-                      >)
+      <div style="width: 85%; margin: auto; background-color: lightgray;">
+        <div style="display: flex; flex-direction: row;">
+          <div style="flex-direction: row; width: 50%;">
+              <div>
+                <fieldset>
+                  <legend>What contains Web Basics?</legend>
+                  <ul>
+                    <li><u>HTML5</u></li>
+                    <li><u>CSS3</u></li>
+                    <li>Visual Studio Code (<i><u>IDE</u></i>)
                     </li>
-                    <li>
-                      Ecma script (<i
-                        >object, arrays, strings, template literals, dates,
-                        functional programming</i
-                      >)
+                    <li>Semantic Web</li>
+                    <li>Responsive Web Design</li>
+                    <li>Bootstrap CSS Framework</li>
+                    <li>Command Line Interface (<i><u>CLI</u></i>)
                     </li>
-                    <li>Create algorithims</li>
-                    <li>Creation and use of data models</li>
-                    <li>
-                      Working with models (<i
-                        >separation of responsibilities, modularization</i
-                      >)
+                    <li>Git als VCS</li>
+                    <li>GitHub</li>
+                    <li>IT Basic & concept (<i>computers, networks, operating systems</i>)
                     </li>
-                    <li>DOM programming (<i>DOM-Api, BOM-Api</i>)</li>
-                    <li>Use of web interfaces in applications</li>
-                    <li>Use of web libraries in applications</li>
-                    <li>How to Use Tools to Find Errors (<i>Debug</i>)</li>
-                    <li>Basic of test-driven development</li>
-                  </ol>
-                </details>
-              </fieldset>
-            </section>
-          </section>
-          <article
-            class="inline-info-section"
-            style="
-              display: inline-block;
-              width: 49%;
-              vertical-align: top;
-              padding-top: 10%;
-            "
-          >
-            <h4 style="text-align: center">
-              Our motto is: share knowledge and promote people!
-            </h4>
-            <h5>Web Basic</h5>
+                  </ul>
+                </fieldset>
+              </div>
+              <div>
+                <fieldset>
+                  <details open>
+                    <summary>What contains Web Programming?</summary>
+                    <ol>
+                      <li>Basic programming (<i>variables, conditions, loops, functions</i>)
+                      </li>
+                      <li>Ecma script (<i>object, arrays, strings, template literals, dates,functional programming</i>)
+                      </li>
+                      <li>Create algorithims</li>
+                      <li>Creation and use of data models</li>
+                      <li>Working with models (<i>separation of responsibilities, modularization</i>)
+                      </li>
+                      <li>DOM programming (<i>DOM-Api, BOM-Api</i>)</li>
+                      <li>Use of web interfaces in applications</li>
+                      <li>Use of web libraries in applications</li>
+                      <li>How to Use Tools to Find Errors (<i>Debug</i>)</li>
+                      <li>Basic of test-driven development</li>
+                    </ol>
+                  </details>
+                </fieldset>
+              </div>
+          </div>
+          <div style="flex-direction: row; width: 50%; margin: auto; padding: 10px;">
+            <h3 style="text-align: center;">Our motto is: share knowledge and promote people!</h3>
+            <h4>Web Basic</h4>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum,
-              nobis illum! Corrupti omnis facilis beatae explicabo provident
-              unde nesciunt
-              <mark
-                >natus magni consectetur laborum expedita, minus veniam amet
-                quam autem.</mark
-              >
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, nobis illum! Corrupti omnis facilis beatae explicabo 
+              provident unde nesciunt natus magni consectetur laborum expedita, minus veniam amet quam autem.
             </p>
-            <h5>Web Programming</h5>
+            <h4>Web Programming</h4>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
-              ipsa nemo minus, necessitatibus culpa praesentium eum provident
-              nisi perferendis vel, ea aliquam dolore, neque velit autem iste?
-              Reiciendis, illum vero?
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ipsa nemo minus, necessitatibus culpa praesentium eum 
+              provident nisi perferendis vel, ea aliquam dolore, neque velit autem iste? Reiciendis, illum vero?
             </p>
-          </article>
-        </section>
-      </section>
+          </div>
+        </div>
+      </div>
 
       <!--icerik video-->
-      <section id="main-video" style="display: flex; justify-content: center">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/UB1O30fR-EE"
-          title="YouTube video player"
-          frameborder="0"
+      <div style="display: flex; justify-content: center; padding: 5px;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UB1O30fR-EE" title="YouTube video player" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        >
+          allowfullscreen>
         </iframe>
-      </section>
+      </div>
 
       <!--sayfanin footer kismi-->
       <hr />
-      <footer id="info-main-section" style="background-color: lightgrey">
-        <section
-          class="inline-footer-section"
-          style="display: inline-block; width: 45%"
-        >
-          <section>
-            <ul style="text-align: center; list-style: inside">
-              <h4>Our Course Phases</h4>
-              <ul>
-                <li>Web Fundamentals</li>
-                <li>Web Programming</li>
-                <li>Fullstack Web Programming</li>
-                <li>Capstone Project</li>
-              </ul>
-            </ul>
-          </section>
+      <footer class="footer-bakgr" style="background-color: lightgrey; display: flex">
+        <section style="flex: 1; text-align: center">
+          <h4>Our Course Phases</h4>
+          <ul style="list-style: inside">
+            <li>Web Fundamentals</li>
+            <li>Web Programming</li>
+            <li>Fullstack Web Programming</li>
+            <li>Capstone Project</li>
+          </ul>
         </section>
 
-        <section
-          class="inline-footer-section"
-          style="display: inline-block; width: 45%; text-align: center"
-        >
-          <section>
-            <h4>Contact</h4>
-            &#9993;
-            <address style="display: inline-block">
-              <a href="info@hicoders.ch">info@hicoders.ch</a>
-            </address>
-            <br />
-            &#9990;
-            <address style="display: inline-block">
-              <a href="+41009001010">+41009001010</a>
-            </address>
-            <br />
-            &#10023;
-            <address style="display: inline-block">
-              Schaffhauserstrasse 470.
-            </address>
-            <br />
-            <address>8052 Zurich</address>
-          </section>
+        <section style="flex: 1; text-align: center">
+          <h4>Contact</h4>
+          <address>
+            &#9993; <a href="info@hicoders.ch">info@hicoders.ch</a><br />
+            &#9990; <a href="+41009001010">+41009001010</a><br />
+            &#10023; Schaffhauserstrasse 470.<br />
+            8052 Zurich
+          </address>
         </section>
       </footer>
     </main>
