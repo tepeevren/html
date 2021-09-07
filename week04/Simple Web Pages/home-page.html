@@ -11,8 +11,8 @@
   </head>
   <body>
     <main>
-      <!--Sayfanin header kismi-->
-      <header style="display: flex;">
+      <!--HEADER START-->
+      <header id="main-header" style="display: flex;">
         <!--logo kismi-->
         <div style="flex: 1">
           <a href="./home-page.html"><img src="./logo-hiCoders.png" alt="Page's logo" width="110"/></a>
@@ -26,20 +26,22 @@
         </div>
       </header>
       <hr />
+      <!--HEADER FINISH-->
 
-      <!--icerik baslik ve resim-->
-      <section style="text-align: center">
+      <!--TITLE AND IMAGE START-->
+      <section id="title-section" style="text-align: center">
         <h3>Welcome to HiCoders' Web Programming Course</h3>
-        <figure style="margin: 0px">
+        <figure id="main-image" style="margin: 0px">
           <img src="image-main-page.png" alt="Web Programming" style="width: 100%"/>
         </figure>
       </section>
+      <!--TITLE AND IMAGE FINISH-->
 
-      <!--icerik bilgiler-->
-      <div style="width: 85%; margin: auto; background-color: lightgray;">
+      <!--CONTENT INFO START-->
+      <div id="main-content" style="width: 85%; margin: auto; background-color: lightgray;">
         <div style="display: flex; flex-direction: row;">
-          <div style="flex-direction: row; width: 50%;">
-              <div>
+          <div class="text-content" style="flex-direction: row; width: 50%;">
+              <div class="content-sub">
                 <fieldset>
                   <legend>What contains Web Basics?</legend>
                   <ul>
@@ -59,7 +61,7 @@
                   </ul>
                 </fieldset>
               </div>
-              <div>
+              <div class="content-sub">
                 <fieldset>
                   <details open>
                     <summary>What contains Web Programming?</summary>
@@ -82,34 +84,36 @@
                 </fieldset>
               </div>
           </div>
-          <div style="flex-direction: row; width: 50%; margin: auto; padding: 10px;">
+          <div class="text-content" style="flex-direction: row; width: 50%; margin: auto; padding: 10px;">
             <h3 style="text-align: center;">Our motto is: share knowledge and promote people!</h3>
             <h4>Web Basic</h4>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, nobis illum! Corrupti omnis facilis beatae explicabo 
-              provident unde nesciunt natus magni consectetur laborum expedita, minus veniam amet quam autem.
+              provident <mark> unde nesciunt natus magni consectetur laborum expedita, minus veniam amet quam autem.</mark>
             </p>
             <h4>Web Programming</h4>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ipsa nemo minus, necessitatibus culpa praesentium eum 
+              Lorem ipsum dolor, <strong> sit amet consectetur adipisicing elit.</strong> Modi ipsa nemo minus, necessitatibus culpa praesentium eum 
               provident nisi perferendis vel, ea aliquam dolore, neque velit autem iste? Reiciendis, illum vero?
             </p>
           </div>
         </div>
       </div>
+      <!--CONTENT INFO FINISH-->
 
-      <!--icerik video-->
-      <div style="display: flex; justify-content: center; padding: 5px;">
+      <!--CONTENT VIDEO START-->
+      <div id="main-content-video" style="display: flex; justify-content: center; padding: 5px;">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/UB1O30fR-EE" title="YouTube video player" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
       </div>
+      <!--CONTENT VIDEO FINISH-->
 
-      <!--sayfanin footer kismi-->
+      <!--FOOTER START-->
       <hr />
-      <footer class="footer-bakgr" style="background-color: lightgrey; display: flex">
-        <section style="flex: 1; text-align: center">
+      <footer id="main-footer" class="footer-bakgr" style="background-color: lightgrey; display: flex">
+        <section class="footer-bakgr" style="flex: 1; text-align: center">
           <h4>Our Course Phases</h4>
           <ul style="list-style: inside">
             <li>Web Fundamentals</li>
@@ -119,7 +123,7 @@
           </ul>
         </section>
 
-        <section style="flex: 1; text-align: center">
+        <section class="footer-bakgr" style="flex: 1; text-align: center">
           <h4>Contact</h4>
           <address>
             &#9993; <a href="info@hicoders.ch">info@hicoders.ch</a><br />
@@ -129,6 +133,7 @@
           </address>
         </section>
       </footer>
+      <!--FOOTER FINISH-->
     </main>
   </body>
 </html>

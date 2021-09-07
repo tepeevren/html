@@ -11,7 +11,8 @@
   </head>
   <body>
     <main>
-      <header style="display: flex;">
+      <!--HEADER START-->
+      <header id="contact-header" style="display: flex;">
         <!--logo kismi-->
         <div style="flex: 1">
           <a href="./home-page.html"><img src="./logo-hiCoders.png" alt="Page's logo" width="110"/></a>
@@ -25,102 +26,112 @@
         </div>
       </header>
       <hr />
+      <!--HEADER FINISH-->
 
+      <!--FORM START-->
       <div style="width: 70%; margin: auto;">
-        <!--welcomes you-->
-        <div class="info-section" style="background-color: lightgray; margin: 1px; padding-inline: 19%; padding-top: 10px; padding-bottom: 10px;">
-          <article>
-            <h3>The HiCoders welcomes you!</h3>
-            <p>
-              We are experienced software engineers. We volutarily help people who are interested in 
-              IT and run various courses for this purpose. If you are interested in our course, 
-              do not hesitate to contact us!
-            </p>
-          </article>
-        </div>
+        <form action="./user-send-message.html">
+          <!--WELCOME SECTION START-->
+          <div class="info-section" style="background-color: lightgray; margin: 1px; padding-inline: 19%; padding-top: 10px; padding-bottom: 10px;">
+            <article>
+              <h3>The HiCoders welcomes you!</h3>
+              <p>
+                We are experienced software engineers. We volutarily help people who are interested in 
+                IT and run various courses for this purpose. If you are interested in our course, 
+                do not hesitate to contact us!
+              </p>
+            </article>
+          </div>
+          <!--WELCOME SECTION FINISH-->
 
-        <!--Personal information section-->
-        <div class="info-section" style="background-color: lightgray; margin: 1px; padding-inline: 19%; padding-top: 2px; padding-bottom: 2px;">
-          <fieldset>
-            <legend>Personal Information</legend>
+          <!--PERSONEL INFORMATION START-->
+          <div class="info-section" style="background-color: lightgray; margin: 1px; padding-inline: 19%; padding-top: 2px; padding-bottom: 2px;">
+            <fieldset>
+              <legend>Personal Information</legend>
 
-            <label>Firstname</label><br />
-            <input type="text" name="fname" placeholder="Please enter your firstname!" style="width: 35%"/><br />
+              <label>Firstname</label><br />
+              <input type="text" name="fname" placeholder="Please enter your firstname!" style="width: 35%" Required/><br />
 
-            <label>Lastname</label><br />
-            <input type="text" name="lname" placeholder="Please enter your lastname!" style="width: 35%"/><br />
+              <label>Lastname</label><br />
+              <input type="text" name="lname" placeholder="Please enter your lastname!" style="width: 35%" Required/><br />
 
-            <label>Email</label><br />
-            <input type="text" name="email" placeholder="Please enter your email!" style="width: 35%"/><br />
+              <label>Email</label><br />
+              <input type="text" name="email" placeholder="Please enter your email!" style="width: 35%" Required/><br />
 
-            <label>Gender</label><br />
-            <input type="radio" name="f-gender" value="Female" /><label>Female</label><br />
-            <input type="radio" name="m-gender" value="Male" /><label>Male</label><br />
-            
-            <label>Phone</label><br />
-            <input type="tel" name="phone" placeholder="Please enter your phone no!" style="width: 35%"/><br />  
-            
-            <label>Graduation</label><br />
-            <select name="cars" id="cars" multiple>
-              <option value="PhD.">PhD.</option>
-              <option value="Master">Master</option>
-              <option value="Bachelor">Bachelor</option>
-              <option value="Association">Association</option>
-            </select><br />
-                
-            <label>What do you expect from this course?</label><br />
-            <textarea name="expect-course" rows="10" style="width: 80%"></textarea><br />
-                
-            <label>What do you want to learn programming?</label><br />
-            <textarea name="want-programming" rows="10" style="width: 80%"></textarea><br />
-          </fieldset>
-        </div>
-        
-        <!--family members section-->
-        <div class="info-section" style="background-color: lightgray; margin: 1px; padding-inline: 19%; padding-top: 2px; padding-bottom: 2px;">
-          <fieldset>
-            <legend>Family Members</legend>
-            <label>Are you married?</label><br />
-            <input type="radio" name="yes-married" value="yes" />
-            <label>Yes</label><br />
-            <input type="radio" name="no-married" value="no" />
-            <label>No</label><br />
-            <label>If you married, how many child do you have?</label><br />
-            <input type="number" name="child-number" placeholder="Enter number of children!" style="width: 35%"/>
-          </fieldset>
-        </div>
+              <label>Gender</label><br />
+              <input type="radio" name="gender" value="Female" /><label>Female</label><br />
+              <input type="radio" name="gender" value="Male" /><label>Male</label><br />
+              
+              <label>Phone</label><br />
+              <input type="tel" name="phone" placeholder="Please enter your phone no!" style="width: 35%"/><br />  
+              
+              <label>Graduation</label><br />
+              <select name="cars" multiple>
+                <option value="PhD.">PhD.</option>
+                <option value="Master">Master</option>
+                <option value="Bachelor">Bachelor</option>
+                <option value="Association">Association</option>
+              </select><br />
+                  
+              <label>What do you expect from this course?</label><br />
+              <textarea name="expect-course" rows="10" style="width: 80%"></textarea><br />
+                  
+              <label>What do you want to learn programming?</label><br />
+              <textarea name="want-programming" rows="10" style="width: 80%"></textarea><br />
+            </fieldset>
+          </div>
+          <!--PERSONEL INFORMATION FINISH-->
+          
+          <!--FAMILY MEMBERS START-->
+          <div class="info-section" style="background-color: lightgray; margin: 1px; padding-inline: 19%; padding-top: 2px; padding-bottom: 2px;">
+            <fieldset>
+              <legend>Family Members</legend>
+              <label>Are you married?</label><br />
+              <input type="radio" name="married" value="yes" />
+              <label>Yes</label><br />
+              <input type="radio" name="married" value="no" />
+              <label>No</label><br />
+              <label>If you married, how many child do you have?</label><br />
+              <input type="number" name="child-number" placeholder="Enter number of children!" style="width: 35%"/>
+            </fieldset>
+          </div>
+          <!--FAMILY MEMBERS FINISH-->
 
-        <!--Conformation and Application-->
-        <div class="info-section" style="background-color: lightgray; margin: 1px; padding-inline: 19%; padding-top: 2px; padding-bottom: 2px;">
-          <fieldset>
-            <legend>Confirmation and Application</legend>
-            <label>Which ones are you familiar with?</label><br />
-            <input type="checkbox" name="html" />
-            <label>HTML</label><br />
-            <input type="checkbox" name="css" />
-            <label>CSS</label><br />
-            <input type="checkbox" name="bootstrap" />
-            <label>Bootstrap</label><br />
-            <input type="checkbox" name="javascript" />
-            <label>JavaScript</label><br />
-            <input type="checkbox" name="nodejs" />
-            <label>NodeJS</label><br />
-            <input type="checkbox" name="reactjs" />
-            <label>ReactJS</label><br />
-            <label>Add your CV</label><br />
-            <input type="file" name="cv" /><br />
-            <input type="checkbox" name="confirm" />
-            <label>Please confirm by ticking the box after reading the 
-              <a href="/privacy-terms-and-condition.html">privacy terms and condition</a>
-            </label>!<br />
-            <button class="button-submit" type="button">Submit</button>
-          </fieldset>
-        </div>
+          <!--CONFORMATION AND APPLICATION START-->
+          <div class="info-section" style="background-color: lightgray; margin: 1px; padding-inline: 19%; padding-top: 2px; padding-bottom: 2px;">
+            <fieldset>
+              <legend>Confirmation and Application</legend>
+              <label>Which ones are you familiar with?</label><br />
+              <input type="checkbox" name="html" />
+              <label>HTML</label><br />
+              <input type="checkbox" name="css" />
+              <label>CSS</label><br />
+              <input type="checkbox" name="bootstrap" />
+              <label>Bootstrap</label><br />
+              <input type="checkbox" name="javascript" />
+              <label>JavaScript</label><br />
+              <input type="checkbox" name="nodejs" />
+              <label>NodeJS</label><br />
+              <input type="checkbox" name="reactjs" />
+              <label>ReactJS</label><br />
+              <label>Add your CV</label><br />
+              <input type="file" name="cv" /><br />
+              <input type="checkbox" name="confirm" Required/>
+              <label>Please confirm by ticking the box after reading the 
+                <a href="/privacy-terms-and-condition.html">privacy terms and condition</a>
+              </label>!<br />
+              <button type="button">Submit</button>
+            </fieldset>
+          </div>
+          <!--CONFORMATION AND APPLICATION FINISH-->
+        </form>
       </div>
+      <!--FORM FINISH-->
 
+      <!--HEADER START-->
       <hr />
-      <footer class="footer-bakgr" style="background-color: lightgrey; display: flex">
-        <section style="flex: 1; text-align: center">
+      <footer id="contact-footer" style="background-color: lightgrey; display: flex">
+        <section class="footer-bakgr" style="flex: 1; text-align: center">
           <h4>Our Course Phases</h4>
           <ul style="list-style: inside">
             <li>Web Fundamentals</li>
@@ -130,7 +141,7 @@
           </ul>
         </section>
 
-        <section style="flex: 1; text-align: center">
+        <section class="footer-bakgr" style="flex: 1; text-align: center">
           <h4>Contact</h4>
           <address>
             &#9993; <a href="info@hicoders.ch">info@hicoders.ch</a><br />
@@ -140,6 +151,7 @@
           </address>
         </section>
       </footer>
+      <!--HEADER FINISH-->
     </main>
   </body>
 </html>
